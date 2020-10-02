@@ -8,18 +8,30 @@
   </head>
   <body>
     <div class="container">
-      <section class="card">
+      <div class="card">
         <img src="assets/Cápsulas.jpg" alt="" />
-        <div class="information">
-          <h2>Italcarb 'K'</h4>
-          <div class="quantity-section">
-            <button onclick="removeQuantity()">-</button>
-            <span id="quantity">0</span>
-            <button onclick="addQuantity()">+</button>
-          </div>
-          <button class="buy" onclick="buy()">Buy!</button>
-        </div>
-      </section>
+        <form class="information">
+          <h2>Italcarb 'K'</h2>
+
+          <section class="quantity-section">
+            <label for="quantity">Quantity:</label>
+            <span onclick="removeQuantity()">-</span>
+            <input type="number" id="quantity" value="0" />
+            <span onclick="addQuantity()">+</span>
+          </section>
+
+          <section class="phone-section">
+            <h3>This information is important for anybody else?</h3>
+            <div>
+              <label for="phone-number"
+                >Please digit his/her phone number:</label
+              >
+              <input type="tel" name="Phone Number" id="phone-number" />
+            </div>
+          </section>
+          <button type="submit" class="buy">Buy!</button>
+        </form>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>
