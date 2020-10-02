@@ -15,6 +15,7 @@ function removeQuantity() {
 }
 
 function buy() {
+  if (quantity === 0) return;
   const whatsappMessage = `https://wa.me/${whatsappNumber}?text=Olá eu gostaria de ${quantity} cápsulas!`;
   window.open(encodeURI(whatsappMessage));
 }
