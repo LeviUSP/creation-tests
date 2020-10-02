@@ -17,6 +17,7 @@ body {
 
 .card {
   width: 90%;
+  max-width: 500px;
   background-color: #000000;
   border-radius: 50px;
   box-shadow: 20px 20px 60px #222222, -20px -20px 60px #2e2e2e;
