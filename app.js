@@ -16,6 +16,6 @@ function removeQuantity() {
 
 function buy() {
   if (quantity === 0) return;
-  const whatsappMessage = `https://wa.me/${whatsappNumber}?text=Olá eu gostaria de ${quantity} cápsulas!`;
+  const whatsappMessage = `https://wa.me/${whatsappNumber}?text=Hello, I would like ${quantity} from Italcarb 'K'!`;
   window.open(encodeURI(whatsappMessage));
 }
