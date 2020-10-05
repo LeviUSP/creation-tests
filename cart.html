@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genesis</title>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <div class="container">
+      <label for="company">Products</label>
+      <div class="product-card">
+        <div class="imgBox">
+          <img src="assets/Italcarb 'K'_object.png" alt="" />
+        </div>
+        <section class="quantity-section">
+          <span>Quantity:</span>
+          <input type="number" readonly id="cart-quantity" value="0" />
+          <img src="./assets/times-circle-solid.svg" alt="" />
+        </section>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <label for="company">Company name:</label>
+          <input type="text" id="company" />
+        </div>
+        <div class="form-group">
+          <label for="name">Your name:</label>
+          <input type="text" id="name" />
+        </div>
+        <section class="new-contact">
+          <h3>This information is important for anybody else?</h3>
+          <div class="form-group">
+            <label for="name-extra">What is his/her name:</label>
+            <input type="text" name="name-extra" id="name-extra" />
+          </div>
+          <div class="form-group">
+            <label for="phone-number">Please digit his/her phone number:</label>
+            <input type="tel" name="Phone Number" id="phone-number-extra" />
+          </div>
+        </section>
+      </form>
+
+      <span class="warning">This contact will be by whatsapp</span>
+      <button class="contact">Contact Sales</button>
+    </div>
+    <script src="cart.js"></script>
+  </body>
+</html>
